@@ -24,7 +24,7 @@ namespace Session5.Controllers
             {
                 new SqlDataAdapter(q, _conn).Fill(dt);
                 foreach (DataRow item in dt.Rows)
-                {
+                {   
                     services.Add(
                         new ServiceType
                         {
